@@ -1,0 +1,53 @@
+{
+  "scenario": "compound_interest_research",
+  "query": "Explícame qué es el interés compuesto, por qué es importante, en qué se diferencia del interés simple y dame un ejemplo sencillo con 1.000 € al 5 % anual durante 10 años.",
+  "language": "es",
+  "purpose": "educacion_financiera",
+  "assumptions": {
+    "initial_capital_eur": 1000.0,
+    "annual_interest_rate_pct": 5.0,
+    "years": 10,
+    "compounding_frequency": "anual",
+    "additional_contributions": 0.0,
+    "withdrawals": 0.0
+  },
+  "sections": {
+    "definicion": "El interés compuesto es el interés que se calcula sobre el capital inicial y también sobre los intereses acumulados. Los intereses pasan a formar parte del capital y pueden generar nuevos intereses.",
+    "como_funciona": "Cuando los intereses se reinvierten, la base sobre la que se calcula el siguiente interés va creciendo. Por eso el crecimiento no es lineal.",
+    "formula": "FV = PV × (1 + r)^n",
+    "ejemplo": {
+      "capital_inicial_eur": 1000.0,
+      "tipo_anual_pct": 5.0,
+      "anos": 10,
+      "valor_final_compuesto_eur": 1628.89,
+      "valor_final_simple_eur": 1500.0,
+      "diferencia_eur": 128.89
+    },
+    "interes_simple_vs_compuesto": "Con interés simple, los intereses no se suman al capital para producir nuevos intereses. Con interés compuesto, sí se reinvierten. En este ejemplo, el interés simple lleva a 1.500,00 € y el compuesto a 1.628,89 €.",
+    "por_que_importa_el_tiempo": "Cada periodo puede generar intereses sobre una base mayor que la anterior. Cuanto más tiempo permanezcan reinvertidos los intereses, mayor puede ser el efecto acumulativo.",
+    "conclusion_educativa": "El interés compuesto ayuda a entender cómo puede crecer una cantidad cuando los rendimientos se reinvierten. No garantiza una rentabilidad concreta: en productos reales también influyen costes, impuestos, riesgo y condiciones."
+  },
+  "sources": [
+    {
+      "title": "Banco de España — Cliente Bancario: Cuestiones generales sobre tipos de interés",
+      "url": "https://clientebancario.bde.es/pcb/es/menu-horizontal/podemosayudarte/tiposinteres/guia_textual/cuestionesgenerales/",
+      "supports": "Diferencia entre interés simple e interés compuesto y funcionamiento de la capitalización."
+    },
+    {
+      "title": "Investor.gov — What is compound interest?",
+      "url": "https://www.investor.gov/additional-resources/information/youth/teachers-classroom-resources/what-compound-interest",
+      "supports": "Definición educativa del interés compuesto como interés sobre el principal y sobre intereses acumulados."
+    },
+    {
+      "title": "Consumer Financial Protection Bureau — How does compound interest work?",
+      "url": "https://www.consumerfinance.gov/ask-cfpb/how-does-compound-interest-work-en-1683/",
+      "supports": "Ejemplo de 1.000 unidades al 5 % y explicación del efecto de la capitalización."
+    }
+  ],
+  "suggested_actions": [
+    "Crear una infografía",
+    "Ver el ejemplo con cifras",
+    "Comparar con interés simple"
+  ],
+  "disclaimer": "Contenido educativo. No constituye asesoramiento financiero personalizado."
+}

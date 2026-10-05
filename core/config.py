@@ -1,7 +1,7 @@
 """Configuración básica de la aplicación."""
 
 APP_NAME = "Aeraris AI"
-APP_SUBTITLE = "Financial Copilot para PYMES"
+APP_SUBTITLE = "Tu copiloto financiero multimodal"
 DEFAULT_LANGUAGE = "es"
 
 # Modelo provisional para una futura integración local con Ollama.

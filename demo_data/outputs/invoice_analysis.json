@@ -1,0 +1,33 @@
+{
+  "scenario": "invoice_analysis",
+  "input_file": "factura_electricidad_septiembre.pdf",
+  "input_mode": "document",
+  "document_type": "factura de suministro eléctrico",
+  "summary": "He identificado un gasto energético de 91,24 € correspondiente a septiembre de 2026. El consumo registrado es de 267 kWh y el vencimiento es el 18 de octubre de 2026.",
+  "data": {
+    "holder": "Laura Martin",
+    "invoice_number": "ED-2026-09-1187",
+    "issue_date": "2026-10-02",
+    "period": "2026-09-01/2026-09-30",
+    "due_date": "2026-10-18",
+    "consumption_kwh": 267,
+    "energy_eur": 64.05,
+    "fixed_eur": 12.5,
+    "taxes_eur": 14.69,
+    "total_eur": 91.24
+  },
+  "observations": [
+    "La energía consumida representa la mayor parte del importe.",
+    "Para valorar la evolución resulta útil comparar el documento con periodos anteriores."
+  ],
+  "suggested_actions": [
+    "Entender los principales conceptos",
+    "Compararlo con información anterior",
+    "Ver su impacto en mis gastos"
+  ],
+  "agent_trace": [
+    "Identificando el tipo de documento",
+    "Extrayendo información financiera",
+    "Preparando acciones contextuales"
+  ]
+}

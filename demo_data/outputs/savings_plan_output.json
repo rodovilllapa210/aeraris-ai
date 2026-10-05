@@ -1,0 +1,23 @@
+{
+  "scenario": "emergency_fund_education",
+  "calculation_engine": "Python",
+  "llm_role": "financial_education_explainer",
+  "inputs": {
+    "monthly_income_eur": 2450.0,
+    "average_monthly_expenses_3m_eur": 1687.33,
+    "available_savings_eur": 2000.0,
+    "latest_month_savings_eur": 670.0,
+    "target_months_of_expenses": 3
+  },
+  "deterministic_results": {
+    "target_eur": 5062.0,
+    "remaining_eur": 3062.0,
+    "estimated_months": 5
+  },
+  "model_output": "Si Laura quisiera construir un fondo de emergencia equivalente a tres meses de su gasto medio reciente, el objetivo sería aproximadamente 5.062 €. Como ya dispone de 2.000 €, le faltarían unos 3.062 €. Si mantuviera un ahorro mensual de 670 €, alcanzaría ese importe en torno a 5 meses.\n\nObservaciones:\n1. La cifra de 5.062 € se basa en el gasto medio de los últimos tres meses, por lo que cambiaría si sus gastos habituales aumentan o disminuyen.\n2. Mantener el ritmo de ahorro actual permitiría avanzar con rapidez, pero no es necesario que todos los meses sean idénticos: la simulación puede actualizarse con nuevos datos.\n\nNota educativa:\nEste cálculo es una simulación orientativa para comprender cómo podría construirse un colchón financiero. No constituye asesoramiento financiero ni implica que tres meses sea la cantidad adecuada para todas las personas.",
+  "suggested_actions": [
+    "Simular 4 o 6 meses de gasto",
+    "Cambiar el ahorro mensual",
+    "Analizar qué gastos varían más"
+  ]
+}

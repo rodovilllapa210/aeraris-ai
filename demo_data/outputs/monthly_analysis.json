@@ -1,0 +1,31 @@
+{
+  "scenario": "monthly_analysis",
+  "input_file": "movimientos_septiembre.csv",
+  "input_mode": "csv",
+  "summary": "Durante septiembre, Laura ha ingresado 2.450 € y gastado 1.780 €, con un ahorro de 670 € y una tasa de ahorro del 27,3 %.",
+  "deterministic_data": {
+    "income_eur": 2450.0,
+    "expenses_eur": 1780.0,
+    "savings_eur": 670.0,
+    "savings_rate_pct": 27.3,
+    "restaurant_spend_eur": 214.0,
+    "restaurant_historical_average_eur": 182.0,
+    "restaurant_change_pct": 17.6
+  },
+  "observations": [
+    "El balance mensual es positivo.",
+    "El gasto en restauración ha aumentado un 17,6 % frente a la media de julio y agosto.",
+    "Las categorías ayudan a detectar cambios de comportamiento que el gasto total puede ocultar."
+  ],
+  "suggested_actions": [
+    "Ver qué categorías han aumentado más",
+    "Analizar la evolución de mi ahorro",
+    "Explorar un objetivo de ahorro"
+  ],
+  "agent_trace": [
+    "Leyendo movimientos",
+    "Calculando métricas con Python",
+    "Agrupando gastos por categoría",
+    "Generando interpretación"
+  ]
+}

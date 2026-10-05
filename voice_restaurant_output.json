@@ -1,0 +1,33 @@
+{
+  "scenario": "voice_restaurant_spending",
+  "input_mode": "audio",
+  "speech_to_text": {
+    "model": "Whisper large-v3-turbo",
+    "transcription": "¿Estoy gastando demasiado en restaurantes?",
+    "language": "es"
+  },
+  "agent_reasoning_summary": {
+    "intent": "compare_category_spending",
+    "context_needed": [
+      "current_month_transactions",
+      "historical_transactions"
+    ],
+    "tools_selected": [
+      "transaction_analyzer",
+      "financial_calculator",
+      "financial_explainer"
+    ]
+  },
+  "deterministic_data": {
+    "restaurant_spend_current_month_eur": 214.0,
+    "restaurant_spend_historical_average_eur": 182.0,
+    "change_pct": 17.6
+  },
+  "llm_prompt": "Actúa como un copiloto de educación financiera.\n\nLa pregunta del usuario, transcrita desde voz, es:\n\"¿Estoy gastando demasiado en restaurantes?\"\n\nLos siguientes datos han sido calculados previamente mediante código y debes tratarlos como ciertos:\n- Gasto en restauración este mes: 214 €\n- Gasto medio mensual en restauración durante los dos meses anteriores: 182 €\n- Variación frente a esa media: +17,6 %\n\nResponde en lenguaje claro y breve.\nNo juzgues moralmente el gasto y no uses expresiones como \"estás gastando demasiado\" como una conclusión absoluta.\nExplica la comparación y señala que decidir si el nivel es alto depende del presupuesto, objetivos y prioridades personales.\nAñade tres siguientes acciones contextuales.\nNo recomiendes productos financieros ni inversiones.",
+  "model_output": "Este mes has gastado 214 € en restauración, frente a una media de 182 € durante los dos meses anteriores. Eso supone un incremento aproximado del 17,6 %.\n\nPor tanto, tu gasto en restauración ha aumentado respecto a tu patrón reciente, aunque eso no significa por sí solo que sea “demasiado”. Para valorarlo habría que considerar tu presupuesto, tu nivel de ahorro y tus prioridades personales.\n\nPodrías:\n- Ver cómo ha evolucionado este gasto durante los últimos meses.\n- Comparar restauración con otras categorías discrecionales.\n- Simular cómo cambiaría tu ahorro mensual si redujeras esta categoría.",
+  "suggested_actions": [
+    "Ver evolución de restauración",
+    "Comparar con otras categorías",
+    "Simular impacto sobre el ahorro"
+  ]
+}

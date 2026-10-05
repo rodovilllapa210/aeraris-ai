@@ -1,0 +1,10 @@
+{
+  "scenario": "monthly_summary_tts",
+  "input_mode": "text",
+  "output_mode": "audio",
+  "tts_engine_used_for_demo_asset": "eSpeak (Spanish voice)",
+  "production_candidate": "XTTS-v2 or equivalent neural TTS",
+  "text": "Resumen de septiembre. Has ingresado dos mil cuatrocientos cincuenta euros y gastado mil setecientos ochenta euros. Tu ahorro del mes ha sido de seiscientos setenta euros, equivalente aproximadamente al veintisiete coma tres por ciento de tus ingresos. El gasto en restauración ha aumentado respecto a los dos meses anteriores. Puedes pedirme que analice una categoría, compare periodos o simule un objetivo de ahorro.",
+  "audio_file": "aeraris_resumen_septiembre.mp3",
+  "note": "The MP3 is a real synthesized output used as a reliable demo asset. For the target architecture, a neural TTS model such as XTTS-v2 can replace this engine."
+}

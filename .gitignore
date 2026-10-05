@@ -14,3 +14,12 @@ tmp/
 outputs/
 *.wav
 *.mp3
+
+# Los outputs y el audio precalculados forman parte de la demo reproducible.
+!demo_data/outputs/
+!demo_data/outputs/*.json
+!demo_data/audio/
+!demo_data/audio/*.wav
+
+# Prompts de trabajo utilizados durante el desarrollo; no forman parte del proyecto.
+Prompt*.txt
